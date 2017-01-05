@@ -1,0 +1,12 @@
+.form-control {
+  margin-top: 45px;
+}
+
+.btn {
+  margin-top: 10px;
+  margin-right: 5px;
+}
+
+tr:hover {
+  cursor: pointer;
+}
