@@ -9,9 +9,6 @@ class SearchBar extends Component {
     super(props);
 
     this.state = { searchTerm: '' };
-
-    this.onInputChange = this.onInputChange.bind(this);
-    this.onSearchSubmit = this.onSearchSubmit.bind(this);
   }
 
   onInputChange(event){
@@ -26,12 +23,12 @@ class SearchBar extends Component {
 
   render(){
     return (
-      <form onSubmit={this.onSearchSubmit} className="input-group">
+      <form onSubmit={this.onSearchSubmit.bind(this)} className="input-group">
         <input
           placeholder="Search Wikipedia"
           className="form-control"
           value={this.state.searchTerm}
-          onChange={this.onInputChange} />
+          onChange={this.onInputChange.bind(this)} />
         <span>
           <button type="submit" className="btn btn-primary">Search</button>
           <a target="_blank" href="https://en.wikipedia.org/wiki/Special:Random" className="btn btn-warning">Random</a>

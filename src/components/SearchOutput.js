@@ -17,7 +17,7 @@ class SearchOutput extends Component {
         </tr>
         <tr>
           <th><a href={data[3][1]}>{data[1][1]}</a></th>
-          <td>{data[2][2]}</td>
+          <td>{data[2][1]}</td>
         </tr>
         <tr>
           <th><a href={data[3][2]}>{data[1][2]}</a></th>
