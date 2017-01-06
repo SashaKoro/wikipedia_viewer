@@ -4,6 +4,7 @@ import {connect} from 'react-redux';
 
 class SearchOutput extends Component {
 
+
   showResults(data) {
     if(!data[0]) {
       return <tr></tr>
@@ -31,7 +32,7 @@ class SearchOutput extends Component {
 
   render(){
     return(
-      <table className="table table-hover">
+      <table className="SearchOutput table table-hover">
         <thead>
           {this.showResults(this.props.search)}
         </thead>
