@@ -10,3 +10,15 @@
 tr:hover {
   cursor: pointer;
 }
+
+td a {
+  display: block;
+}
+
+th a{
+  display: block;
+}
+
+table {
+  margin-top: 30px;
+}
