@@ -7,8 +7,8 @@ describe('SearchOutput', () => {
     const props = { search: ['test', ['name', '2nd', '3rd'], ['description', '2nd', '3rd'], ['url', 'url', 'url']]};
     component = renderComponent(SearchOutput, null, props);
   });
-  it("shows 3 TD's", () => {
-    expect(component.find('td').length).to.equal(3);
+  it("shows 10 TD's", () => {
+    expect(component.find('td').length).to.equal(10);
   });
   it('contains data passed to it', () => {
     expect(component).to.contain('name');

@@ -9,7 +9,7 @@ class SearchOutput extends Component {
   render(){
     return(
       <table className="SearchOutput table table-hover">
-        <SearchList results = {this.props.search} />
+        <SearchList results={this.props.search} />
       </table>
     );
   }

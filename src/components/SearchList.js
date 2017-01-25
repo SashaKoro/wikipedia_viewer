@@ -2,6 +2,7 @@ import React from 'react';
 import SearchListItem from './SearchListItem';
 import _ from 'lodash';
 
+
 const SearchList = ({results}) => {
 
 
@@ -18,15 +19,13 @@ const SearchList = ({results}) => {
 
     return(
       <thead>
-        {finalArray.map((eachItem) => {
-          return (
+        {finalArray.map((eachItem) =>
           <SearchListItem
             term={eachItem[0]}
             description={eachItem[1]}
             url={eachItem[2]}
             />
-          );
-        })}
+        )}
       </thead>
     );
   };
