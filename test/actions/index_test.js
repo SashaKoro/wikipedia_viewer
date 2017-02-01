@@ -9,7 +9,6 @@ describe('actions', () => {
     });
     it('has the right payload', () => {
       const action = SearchWikipedia('hello');
-     // expect(action.payload).to.equal({});
     });
   });
 });
