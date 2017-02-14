@@ -4,8 +4,6 @@ import _ from 'lodash';
 
 
 const SearchList = ({results}) => {
-
-
     if (!results[0]) {
       return <tr></tr>
     }
@@ -19,11 +17,12 @@ const SearchList = ({results}) => {
 
     return(
       <thead>
-        {finalArray.map((eachItem) =>
+        {finalArray.map((eachItem, index) =>
           <SearchListItem
             term={eachItem[0]}
             description={eachItem[1]}
             url={eachItem[2]}
+            key={index}
             />
         )}
       </thead>
